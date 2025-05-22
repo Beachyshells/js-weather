@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>My weather application</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form id="form" class="form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            class="city"
+            id="city"
+            required
+          />
+          <input type="submit" value="Search" class="submit" id="submit" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <div class="city-weather">
+              <h1 class="current-city"></h1>
+              <div class="temperature-wrapper">
+                <span class="todays-emoji" id="todays-emoji"><img src=""  id="weather-icon" /></span>
+                <span class="temperature" style="display: none;">0</span
+                ><span class="degree" style="display:none;"> °F</span>
+              </div>
+            </div>
+            <p>
+              <div class="current-information">
+              <span id="todays-day">Saturday</span>
+              <span id="hours">15</span>:<span id="minutes">32</span>,
+              <span id="description"> </span> <br />
+              Humidity: <strong><span id="humidity"></span>%</strong> Wind:
+              <strong><span id="wind"></span>mph</strong>
+            </div>
+          </p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by 🐞
+          <a
+            class="signature"
+            href="https://www.shecodes.io/graduates/169424-michelle-durham"
+            target="_blank"
+            >Michelle Durham</a
+          >
+          and is
+          <a
+            class="signature"
+            href="https://github.com/Beachyshells"
+            target="_blank"
+          >
+            on GitHub</a
+          >
+          and
+          <a class="signature" href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+body {
+  background: linear-gradient(
+    to left,
+
+    rgb(133, 233, 249),
+    rgb(236, 249, 165)
+  );
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  background: white;
+  opacity: 80%;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 60px auto;
+  width: 90%;
+  max-width: 700px;
+}
+
+header form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  height: 50px;
+}
+.city {
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  width: 60%;
+  max-width: 400px;
+  background: linear-gradient(
+    to left,
+
+    rgb(133, 233, 249),
+    rgb(236, 249, 165)
+  );
+  opacity: 60%;
+  font-size: 18px;
+}
+.submit {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(133, 233, 249);
+  box-shadow: 2px 3.5px 5px;
+  font-size: 18px;
+  transition: all 150ms ease-in-out;
+}
+.submit:hover {
+  background-color: rgb(120, 210, 224);
+  box-shadow: 1px 1px 5px;
+}
+
+h1 {
+  font-size: 2em;
+}
+.city-weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 1.75rem;
+  font-weight: bolder;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .city-weather {
+    font-size: 3rem;
+  }
+}
+.temperature-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 5rem;
+}
+.temperature {
+  font-size: 3rem;
+  margin-top: 25px;
+  padding-left: 0;
+}
+
+.current-information {
+  padding-bottom: 20px;
+}
+
+p strong {
+  color: #f78306;
+}
+.todays-emoji {
+  font-size: 2.25rem;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.signature {
+  color: #f78306;
+}
+.signature:hover {
+  color: blue;
+}
+.degree {
+  font-size: 0.25em;
+  margin-top: 15px;
+}
+footer {
+  opacity: 80%;
+}
+
+#todays-day {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+#hours {
+  font-size: large;
+  font-weight: bolder;
+}
+#minutes {
+  font-size: large;
+  font-weight: bolder;
+}
